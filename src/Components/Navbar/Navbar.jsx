@@ -70,7 +70,7 @@ const Navbar = () => {
           </NavLink></li>
       </ul>
 
-      <div className="flex justify-between items-center space-x-2 mr-0 md:mr-5">
+      <div className="flex justify-between items-center space-x-2 mr-4 md:mr-5">
         <button className="px-4 py-2 border border-gray-900 text-white rounded-md text-sm font-medium hover:bg-gray-900 transition">Log In</button>
         <button className="px-4 py-2 bg-gray-800 text-white rounded-md text-sm font-medium hover:bg-gray-800 transition">Sign Up</button>
       </div>
