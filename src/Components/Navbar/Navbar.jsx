@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center px-4 py-4">
 
         
-      <div className="text-xl font-semibold text-white pl-10">
+      <div className="text-xl font-semibold text-white pl-3 md:pl-5 sm:pl-7">
         <span className="font-bold">Home</span>Lutions
         
       </div>
