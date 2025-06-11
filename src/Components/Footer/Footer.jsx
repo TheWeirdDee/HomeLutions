@@ -11,7 +11,7 @@ const Footer = () => {
             <FaToolbox className="text-blue-400 text-3xl" />  
             <span className="text-xl font-bold playfair">HomeLutions</span>
           </div>
-          <p className="text-xl mb-6 frunchy leading-5">
+          <p className="text-lg mb-6 playfair">
             Reliable handyman services for all your home repair and maintenance needs.
           </p>
           <h3 className="text-2xl font-bold mb-2 text-blue-400 font">Follow Us</h3>

@@ -53,7 +53,7 @@ const ContactUs = () => {
             alt="Handyman"
             className="w-full rounded-md mb-6 object-cover"
           />
-          <div className="space-y-4 text-gray-700 text-left mr-30">
+          <div className="space-y-4 text-gray-700 text-left mr-20">
             <div>
               <h4 className="font-semibold">Phone</h4>
               <p>(123) 456-7890</p>
