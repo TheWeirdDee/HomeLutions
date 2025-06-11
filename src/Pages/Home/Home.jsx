@@ -7,6 +7,7 @@ import WhyChooseUs from '../../Components/WhyChooseUs';
 import AboutUs from '../../Components/AboutUs';
 import Testimonials from '../../Components/Testimonials';
 import ContactSection from '../../Components/ContactSection';
+import FAQ from '../../Components/FAQ';
 const Home = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Home = () => {
   <Cards />
   <Testimonials />
    {/* <CoreValues /> */}
+   <FAQ />
    <ContactSection />
     
    

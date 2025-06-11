@@ -2,8 +2,8 @@ import React from 'react';
 import handymanImg from "../assets/Dashimgg.png";
 const ContactUs = () => {
   return (
-    <section className="bg-gray-100 py-16 px-4">
-      <div className="max-w-6xl mx-auto bg-blue-100 rounded-xl shadow-md p-8 md:p-12 flex flex-col md:flex-row gap-10">
+    <section className="bg-blue-50 py-16 px-4">
+      <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-8 md:p-12 flex flex-col md:flex-row gap-10">
         {/* Left Side - Form */}
         <div className="md:w-1/2">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
@@ -17,7 +17,7 @@ const ContactUs = () => {
               <input
                 type="text"
                 className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="John Doe"
+                placeholder="Divine Dilibe"
               />
             </div>
             <div>
@@ -52,7 +52,7 @@ const ContactUs = () => {
             alt="Handyman"
             className="w-full rounded-md mb-6 object-cover"
           />
-          <div className="space-y-4 text-gray-700">
+          <div className="space-y-4 text-gray-700 text-left mr-30">
             <div>
               <h4 className="font-semibold">Phone</h4>
               <p>(123) 456-7890</p>

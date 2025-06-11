@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import handyman from "../assets/Dashimgg.png";
