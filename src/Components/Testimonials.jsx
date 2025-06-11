@@ -36,21 +36,21 @@ const Testimonials = () => {
               ))}
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 frunchy">
             What Our Customers Say
           </h2>
-          <p className="text-gray-500 mb-6">
+          <p className="text-gray-500 mb-6 playfair text-lg">
             We take pride in delivering fast, reliable, and expert handyman
             services. But don’t just take our word for it—see what our happy
             customers have to say.
           </p>
-          <button className="bg-gradient-to-r from-gray-900 to-blue-500 text-white px-6 py-3 rounded-md font-semibold shadow hover:shadow-lg transition">
+          <button className="bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow hover:shadow-lg transition font">
             View More
           </button>
         </div>
 
         {/* Right Section */}
-        <div className="md:w-1/2 space-y-4">
+        <div className="md:w-1/2 space-y-4 playfair text-md">
           {testimonials.map((t, i) => (
             <div
               key={i}

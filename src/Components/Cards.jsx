@@ -66,8 +66,8 @@ const Cards = () => {
 
   return (
     <div className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-2xl md:text-3xl font-bold mb-16 text-left max-w-4xl mx-auto">
-        Need a <span className="text-blue-900">Handyman?</span> <br />
+      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-left max-w-4xl mx-auto font">
+        Need a <span className="text-blue-900 chloe">Handyman?</span> <br />
         We’ve Got You Covered!
       </h2>
 
@@ -91,10 +91,10 @@ const Cards = () => {
             >
               <div className="bg-white rounded-xl shadow-xl shadow-black overflow-hidden grid grid-cols-1 md:grid-cols-2 h-[380px]">
                 <div className="p-6 flex flex-col justify-center">
-                  <h4 className="text-2xl font-semibold text-gray-800 mb-2">
+                  <h4 className="text-2xl font-semibold text-gray-800 mb-3 font">
                     {service.title}
                   </h4>
-                  <p className="text-gray-600 text-md">{service.description}</p>
+                  <p className="text-gray-600 text-lg playfair">{service.description}</p>
                 </div>
                 <img
                   src={service.image}

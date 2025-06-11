@@ -13,11 +13,11 @@ const Navbar = () => {
       
   return (
     <div>       
-    <nav className="fixed top-0 left-0 right-0 w-full bg-blue-950/90 backdrop-blur-lg z-50 shadow-sm">
+    <nav className="fixed top-0 font left-0 right-0 w-full bg-blue-950/90 backdrop-blur-lg z-50 shadow-sm">
         <div className="flex justify-between items-center px-4 py-4">
 
         
-      <div className="text-xl font-semibold text-white pl-0 md:pl-5 sm:pl-7">
+      <div className="text-xl font-semibold text-white pl-0 md:pl-5 sm:pl-7 playfair">
         <span className="font-bold">Home</span>Lutions
         
       </div>
@@ -71,8 +71,8 @@ const Navbar = () => {
       </ul>
 
       <div className="flex justify-between items-center space-x-2 mr-4 md:mr-5">
-        <button className="px-4 py-2 border border-gray-900 text-white rounded-md text-sm font-medium hover:text-black hover:bg-blue-200 transition">Log In</button>
-        <button className="px-4 py-2 bg-gray-800 text-white hover:bg-gray-900 rounded-md text-sm font-medium   transition">Sign Up</button>
+        <button className="chloe text-xl px-4 py-2 border border-gray-900 text-white rounded-md font-medium hover:text-black hover:bg-blue-200 transition">Log In</button>
+        <button className="chloe text-xl px-4 py-2 bg-gray-800 text-white hover:bg-gray-900 rounded-md font-medium   transition">Sign Up</button>
       </div>
 
 

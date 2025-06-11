@@ -7,27 +7,27 @@ const WhyHireUs = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
-          <p className="text-blue-800 text-2xl uppercase font-semibold mb-2">About Us</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-blue-800 text-2xl uppercase font-semibold mb-2 font">About Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight playfair">
           Driven by purpose. Built on trust. <br />
             <span className="text-black"> Focused on excellence. </span>
           </h2>
-          <p className="text-gray-700 mt-4 text-md">
-          At Homelutions, we’re more than just a service provider — we’re partners in creating exceptional spaces and experiences. Our journey began with a simple belief: that quality craftsmanship, thoughtful design, and genuine human connection can transform any vision into reality.
+          <p className="text-gray-700 mt-4 text-lg playfair">
+          At Homelutions, we’re more than just a service provider, we’re partners in creating exceptional spaces and experiences. Our journey began with a simple belief: that quality craftsmanship, thoughtful design, and genuine human connection can transform any vision into reality.
 
           </p>
-          <p className="text-gray-600 mt-4 text-md">
+          <p className="text-gray-600 mt-4 text-lg playfair">
           With a team of skilled professionals, designers, and problem-solvers, we bring decades of combined expertise to every project. Whether it’s planning, material selection, installation, or ongoing support. our approach is always hands-on, transparent, and tailored to your needs.
           </p>
-          <p className="text-gray-600 mt-4 text-md">
+          <p className="text-gray-600 mt-4 text-lg playfair">
           We don’t just deliver solutions; we craft environments that inspire, last, and speak for themselves.
           </p>
           <div className="mt-6 flex gap-4">
-            <button className="bg-blue-950 text-white px-6 py-3 rounded hover:bg-gray-900 transition">
-              Read more
+            <button className="bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 text-white px-6 py-3 rounded transition playfair text-lg">
+              Read More
             </button>
-            <button className="border border-blue-950 text-gray-950 px-6 py-3 rounded hover:bg-blue-200 transition">
-              Request service
+            <button className="playfair text-lg font-bold border border-blue-950 text-gray-950 px-6 py-3 rounded hover:bg-blue-200 transition">
+              Request Service
             </button>
           </div>
         </div>

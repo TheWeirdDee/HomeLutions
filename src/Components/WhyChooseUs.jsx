@@ -30,11 +30,11 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         {/* Left content */}
         <div>
-          <p className="text-2xl font-semibold text-blue-800 uppercase">Why Choose Us?</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+          <p className="text-2xl font-semibold text-blue-800 uppercase font">Why Choose Us?</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 playfair">
             Choose Us For Reliable Handyman Services
           </h2>
-          <p className="text-gray-600 mt-4">
+          <p className="text-gray-600 text-lg mt-4 playfair">
             From minor fixes to major repairs, our team ensures your home and workspace stay in top shape quickly, professionally, and affordably.
           </p>
         </div>
@@ -47,8 +47,8 @@ const WhyChooseUs = () => {
                 {item.icon}
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900">{item.title}</h3>
-                <p className="text-sm text-gray-600 mt-1">{item.description}</p>
+                <h3 className="font-semibold text-gray-900 text-lg">{item.title}</h3>
+                <p className="text-md text-gray-600 mt-1 playfair">{item.description}</p>
               </div>
             </div>
           ))}
