@@ -1,94 +1,112 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import handyman from "../assets/Dashimgg.png";  
+import handyman from "../assets/Dashimgg.png";
 
-const steps = [
+const services = [
   {
-    title: "Free Inspection & Estimate",
+    title: "Electrical Repairs",
     description:
-      "We visit your site, assess the work needed, and give you a detailed cost estimate.",
+      "Lights flickering? Socket not working? We’ll get your wiring back in shape, safely and swiftly. No sparks, just solutions.",
     image: handyman,
   },
   {
-    title: "Material Selection",
+    title: "Plumbing Fixes",
     description:
-      "We help you choose the right materials for quality and budget.",
+      "Leaky tap driving you nuts? Drain refusing to drain? We tackle drips, clogs, and splashes like it’s our superpower.",
     image: handyman,
   },
   {
-    title: "Skilled Execution",
+    title: "Furniture Assembly",
     description:
-      "Our professional team executes the work with attention to detail and safety.",
+      "Just bought a flat-pack furniture and dreading the manual? Skip the stress — we’ll put it together while you relax.",
     image: handyman,
   },
   {
-    title: "Quality Check & Cleanup",
+    title: "Painting & Patching",
     description:
-      "We inspect all work done and clean up the site before handover.",
+      "Time to freshen up? From bold new colors to covering up those mystery wall dents, we paint and patch with precision.",
     image: handyman,
   },
   {
-    title: "After-Support & Maintenance",
+    title: "Appliance Installation",
     description:
-      "We stay in touch for post-service support, repairs, and adjustments.",
+      "Need a pro to install your washing machine, fan, or cooker? We hook it up neatly, safely, and ready to roll.",
+    image: handyman,
+  },
+  {
+    title: "Door & Lock Repairs",
+    description:
+      "Creaky door? Stubborn lock? Broken handle? We fix it all so your home feels secure, smooth, and quiet again.",
+    image: handyman,
+  },
+  {
+    title: "TV Mounting & Wall Hanging",
+    description:
+      "TVs, shelves, artwork — we’ll hang it all up straight and strong. No crooked frames or risky DIY moves here.",
+    image: handyman,
+  },
+  {
+    title: "Cleaning Services",
+    description:
+      "Hosting a party? Just had one? Or just too busy to deep clean? We’ll scrub, shine, and refresh every corner.",
     image: handyman,
   },
 ];
 
 const Cards = () => {
-    return (
-      <div className="bg-neutral-50 py-16 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-16">
-          How We <span className="text-yellow-600">Simplify</span> Your Home Repairs
-        </h2>
-  
-        <div className="relative max-w-4xl mx-auto h-[400px]">
-          {steps.map((step, index) => (
-            <StackedCard key={index} step={step} index={index} />
-          ))}
-        </div>
+  const [activeIndex, setActiveIndex] = useState(services.length - 1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev - 1 + services.length) % services.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-8">
+      <h2 className="text-2xl md:text-3xl font-bold mb-16 text-left max-w-4xl mx-auto">
+        Need a <span className="text-blue-900">Handyman?</span> <br />
+        We’ve Got You Covered!
+      </h2>
+
+      <div className="relative max-w-4xl mx-auto z-0" style={{ height: "400px" }}>
+        {services.map((service, index) => {
+          const isActive = index === activeIndex;
+          const stackOffset = (services.length - 1 - index) * 30;
+
+          return (
+            <motion.div
+              key={index}
+              initial={false}
+              animate={{
+                y: isActive ? 0 : -stackOffset,
+                scale: isActive ? 1 : 0,
+                opacity: isActive ? 1 : 0.5,
+              }}
+              transition={{ duration: 1 }}
+              style={{ zIndex: isActive ? 100 : 100 - index }}
+              className="absolute top-0 left-0 right-0 px-4"
+            >
+              <div className="bg-white rounded-xl shadow-xl shadow-black overflow-hidden grid grid-cols-1 md:grid-cols-2 h-[380px]">
+                <div className="p-6 flex flex-col justify-center">
+                  <h4 className="text-2xl font-semibold text-gray-800 mb-2">
+                    {service.title}
+                  </h4>
+                  <p className="text-gray-600 text-md">{service.description}</p>
+                </div>
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
-    );
-  };
-  
-  const StackedCard = ({ step, index }) => {
-    const zIndex = 100 - index; // topmost card has highest z-index
-    const offset = index * -20; // each card peeks from the top
-  
-    return (
-      <motion.div
-        className="absolute w-full left-0 right-0"
-        style={{
-          top: 0,
-          transform: `translateY(${offset}px)`,
-          zIndex,
-        }}
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: index * 0.2 }}
-      >
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 h-[280px]">
-          <div className="p-6 flex flex-col justify-center">
-            <h3 className="text-4xl font-light text-gray-300 mb-1">{index + 1}</h3>
-            <h4 className="text-xl font-semibold text-gray-800 mb-2">
-              {step.title}
-            </h4>
-            <p className="text-gray-600 text-sm">{step.description}</p>
-          </div>
-          <div className="h-full">
-            <img
-              src={step.image}
-              alt={step.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </motion.div>
-    );
-  };
-  
-  
+    </div>
+  );
+};
 
 export default Cards;

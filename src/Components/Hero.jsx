@@ -21,7 +21,7 @@ const Hero = () => {
           <button className="bg-gray-900 hover:bg-black text-white py-2 px-5 rounded font-semibold">
             Need A Service
           </button>
-          <button className="border border-white font-semibold hover:bg-white hover:text-black py-2 px-5 rounded">
+          <button className="border border-white font-semibold hover:bg-blue-200 hover:text-black py-2 px-5 rounded">
             Discover More
           </button>
         </div>
