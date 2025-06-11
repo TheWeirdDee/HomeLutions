@@ -1,10 +1,12 @@
 import React from 'react'
 import Hero from "../../Components/Hero";
 import Cards from '../../Components/Cards'
-import CoreValues from '../../Components/CoreValues';
+// import CoreValues from '../../Components/CoreValues';
 import StatsSection from '../../Components/StatsSection';
 import WhyChooseUs from '../../Components/WhyChooseUs';
-import WhyHireUs from '../../Components/WhyHireUs';
+import AboutUs from '../../Components/AboutUs';
+import Testimonials from '../../Components/Testimonials';
+import ContactSection from '../../Components/ContactSection';
 const Home = () => {
   return (
     <div>
@@ -12,9 +14,11 @@ const Home = () => {
   <Hero />
   <StatsSection />
   <WhyChooseUs />
-  <WhyHireUs />
+  <AboutUs />
   <Cards />
-   <CoreValues />
+  <Testimonials />
+   {/* <CoreValues /> */}
+   <ContactSection />
     
    
     </div>
