@@ -2,57 +2,67 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import handyman from "../assets/Dashimgg.png";
-
+import electric from "../assets/electric.png";
+import paint from "../assets/paint.png";
+import Tvmounting from "../assets/Tvmounting.png";
+import Plumbing from "../assets/Plumbing.png";
+import Furniture from "../assets/Furniture.png";
+import Cleaning from "../assets/Cleaning.png";
+import Appliance from "../assets/Appliance.png";
+import Lock from "../assets/Lock.png";
 const services = [
   {
     title: "Electrical Repairs",
     description:
       "Lights flickering? Socket not working? We’ll get your wiring back in shape, safely and swiftly. No sparks, just solutions.",
-    image: handyman,
+    image: electric,
   },
   {
     title: "Plumbing Fixes",
     description:
       "Leaky tap driving you nuts? Drain refusing to drain? We tackle drips, clogs, and splashes like it’s our superpower.",
-    image: handyman,
-  },
-  {
-    title: "Furniture Assembly",
-    description:
-      "Just bought a flat-pack furniture and dreading the manual? Skip the stress — we’ll put it together while you relax.",
-    image: handyman,
-  },
-  {
-    title: "Painting & Patching",
-    description:
-      "Time to freshen up? From bold new colors to covering up those mystery wall dents, we paint and patch with precision.",
-    image: handyman,
-  },
-  {
-    title: "Appliance Installation",
-    description:
-      "Need a pro to install your washing machine, fan, or cooker? We hook it up neatly, safely, and ready to roll.",
-    image: handyman,
+    image: Plumbing,
   },
   {
     title: "Door & Lock Repairs",
     description:
       "Creaky door? Stubborn lock? Broken handle? We fix it all so your home feels secure, smooth, and quiet again.",
-    image: handyman,
+    image: Lock,
   },
+  {
+    title: "Furniture Assembly",
+    description:
+      "Just bought a flat-pack furniture and dreading the manual? Skip the stress — we’ll put it together while you relax.",
+    image: Furniture,
+  },
+  {
+    title: "Painting & Patching",
+    description:
+      "Time to freshen up? From bold new colors to covering up those mystery wall dents, we paint and patch with precision.",
+    image: paint,
+  },
+  {
+    title: "Appliance Installation",
+    description:
+      "Need a pro to install your washing machine, fan, or cooker? We hook it up neatly, safely, and ready to roll.",
+    image: Appliance,
+  },
+   
   {
     title: "TV Mounting & Wall Hanging",
     description:
       "TVs, shelves, artwork — we’ll hang it all up straight and strong. No crooked frames or risky DIY moves here.",
-    image: handyman,
+    image: Tvmounting,
   },
   {
     title: "Cleaning Services",
     description:
       "Hosting a party? Just had one? Or just too busy to deep clean? We’ll scrub, shine, and refresh every corner.",
-    image: handyman,
+    image: Cleaning,
   },
+  
 ];
+
 
 const Cards = () => {
   const [activeIndex, setActiveIndex] = useState(services.length - 1);
@@ -97,10 +107,11 @@ const Cards = () => {
                   <p className="text-gray-600 text-lg playfair">{service.description}</p>
                 </div>
                 <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover"
-                />
+  src={service.image}
+  alt={service.title}
+  className="w-full h-60 sm:h-80 md:h-80 lg:h-full object-contain"
+/>
+
               </div>
             </motion.div>
           );

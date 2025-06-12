@@ -1,10 +1,10 @@
 import React from 'react';
-import handymanImg from "../assets/Dashimgg.png";
+import contact from "../assets/contact.png";
 const ContactUs = () => {
   return (
     <section className="bg-blue-50 py-16 px-4">
       <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-8 md:p-12 flex flex-col md:flex-row gap-10">
-        {/* Left Side - Form */}
+        {/* Form */}
         <div className="md:w-1/2">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font">Get In Touch</h2>
           <p className="text-gray-600 mb-6 playfair text-lg">
@@ -46,10 +46,10 @@ const ContactUs = () => {
           </form>
         </div>
 
-        {/* Right Side - Image & Contact Info */}
+         
         <div className="md:w-1/5 flex flex-col items-center text-center md:text-left md:items-start playfair text-lg">
           <img
-            src= {handymanImg}
+            src= {contact}
             alt="Handyman"
             className="w-full rounded-md mb-6 object-cover"
           />

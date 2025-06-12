@@ -34,14 +34,14 @@ const WhyHireUs = () => {
 
         {/* Right Content */}
         <div className="relative w-full h-full flex items-center justify-center">
-          {/* Animated Background */}
+          {/* Blue Background */}
           <div className="absolute -top-10 -right-5 w-100 h-100 md:w-[400px] md:h-[400px] bg-blue-600 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse z-0" />
 
-          {/* Handyman Image */}
+           
           <img
             src={handymanImg}
             alt="Handyman"
-            className="relative z-10 w-64 md:w-80"
+            className="relative z-10 w-84 md:w-100"
           />
         </div>
       </div>
