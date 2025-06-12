@@ -8,6 +8,7 @@ import AboutUs from '../../Components/AboutUs';
 import Testimonials from '../../Components/Testimonials';
 import ContactSection from '../../Components/ContactSection';
 import FAQ from '../../Components/FAQ';
+import Pricing from '../../Components/Pricing';
 const Home = () => {
   return (
     <div>
@@ -18,8 +19,8 @@ const Home = () => {
   <AboutUs />
   <Cards />
   <HowItWorks />
+  <Pricing />
   <Testimonials />
-   {/* <CoreValues /> */}
    <FAQ />
    <ContactSection />
     

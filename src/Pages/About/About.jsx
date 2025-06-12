@@ -8,6 +8,7 @@ import HowItWorks from "../../Components/HowItWorks";
 import Testimonials from '../../Components/Testimonials';
 import ContactSection from '../../Components/ContactSection';
 import FAQ from '../../Components/FAQ';
+import Pricing from '../../Components/Pricing';
 
 const About = () => {
   return (
@@ -21,6 +22,7 @@ const About = () => {
   <WhyChooseUs />
   <Cards />
   <HowItWorks />
+  <Pricing />
   <Testimonials />
   <FAQ />
   <ContactSection />
