@@ -51,9 +51,9 @@ const services = [
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Intro Box */}
           <div className="bg-blue-100 p-6 shadow-md flex flex-col justify-center">
-            <p className="text-orange-500 font-semibold mb-2">WHAT WE DO</p>
-            <h2 className="text-2xl font-bold text-gray-900">What Can We Offer</h2>
-            <h3 className="text-2xl font-bold text-gray-900">As Your Handyman</h3>
+            <p className="text-blue-500 font-semibold mb-2 font md:text-7xl text-6xl leading-17">WHAT WE DO</p>
+            <h2 className="md:text-3xl text-2xl font-bold text-gray-900 frunchy">What Can We Offer</h2>
+            <h3 className="md:text-3xl text-2xl font-bold text-gray-900 frunchy">As Your Handyman</h3>
           </div>
   
           {/* Service Boxes */}
@@ -65,8 +65,8 @@ const services = [
               <div className="mb-4">
                 {service.icon}
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <h3 className="text-lg font-bold text-gray-800 mb-2 font">{service.title}</h3>
+              <p className="text-gray-600 text-md playfair">{service.description}</p>
               <a
                 href="#"
                 className="text-indigo-600 text-sm font-medium mt-3 inline-flex items-center hover:underline"

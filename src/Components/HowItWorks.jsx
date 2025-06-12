@@ -26,7 +26,7 @@ const HowItWorks = () => {
   return (
     <section className="bg-blue-100 py-20 px-4">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">How it works?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 font">How it works?</h2>
       </div>
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-12 max-w-6xl mx-auto">
@@ -35,8 +35,8 @@ const HowItWorks = () => {
             <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 shadow-md ${step.bgColor}`}>
               {step.icon}
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">{step.title}</h3>
-            <p className="text-gray-600 text-sm">{step.description}</p>
+            <h3 className="text-md font-semibold text-gray-800 mb-2 font">{step.title}</h3>
+            <p className="text-gray-600 text-md playfair">{step.description}</p>
           </div>
         ))}
       </div>
