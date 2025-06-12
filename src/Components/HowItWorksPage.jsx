@@ -54,7 +54,7 @@ export default function HowItWorks() {
               step.reverse ? 'md:flex-row-reverse' : ''
             }`}
           >
-            {/* Image Container with Blue Background */}
+             
             <div className="relative w-full md:w-1/3 flex items-center justify-center">
               <div className="absolute w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse z-0" />
               <img

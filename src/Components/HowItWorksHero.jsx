@@ -8,7 +8,7 @@ const HowItWorksHero = () => {
     <section className="bg-blue-950 text-white py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
      
       <div className="md:w-1/2 mb-10 md:mb-0">
-      <p className="uppercase text-sm font-medium text-gray-500 mt-20 playfair">
+      <p className="uppercase text-sm font-medium text-gray-500 mt-13 playfair">
           Book A Handyman!
         </p>
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 playfair">
