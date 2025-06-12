@@ -5,21 +5,35 @@ const steps = [
   {
     title: 'Find Your Service',
     description:
-      'Browse through a wide range of handyman services to find exactly what you need – from electrical fixes to furniture assembly and more.',
+      'Browse our catalog of handyman services to find exactly what you need. Whether it’s fixing an electrical issue, hanging a TV, or deep cleaning your space, we’ve got you covered with a wide array of reliable solutions at your fingertips.',
     image: electric,
     reverse: false,
   },
   {
     title: 'Book an Appointment',
     description:
-      'Choose a time that works for you. Our handymen arrive on time, fully equipped to handle your tasks efficiently and professionally.',
+      'Choose a convenient time that fits your schedule. Our platform lets you easily pick a day and time slot. Once confirmed, a qualified handyman will be assigned and briefed to ensure smooth and timely service delivery.',
     image: electric,
     reverse: true,
   },
   {
-    title: 'Track Your Job',
+    title: 'Track Your Job in Real-Time',
     description:
-      'Stay updated with real-time tracking and job progress. We’ll notify you once the task is completed and get your feedback.',
+      'From the moment your appointment is confirmed, you can track the handyman’s progress in real-time. Get notifications when they’re on the way, when the work begins, and when it’s completed — so you’re never left guessing.',
+    image: electric,
+    reverse: false,
+  },
+  {
+    title: 'Rate and Review Your Experience',
+    description:
+      'After the job is complete, we ask for your feedback. Your rating helps maintain our high standards and ensures that only the best professionals stay in our network. It’s a quick way to share your satisfaction or raise concerns.',
+    image: electric,
+    reverse: true,
+  },
+  {
+    title: 'Get Ongoing Support',
+    description:
+      'Need another service later? No problem. With your profile, booking history, and preferences saved, hiring again is fast and hassle-free. Plus, our support team is always available to answer questions or handle follow-ups.',
     image: electric,
     reverse: false,
   },
@@ -28,7 +42,7 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section className="relative py-20 px-6 md:px-20 bg-blue-100 overflow-hidden">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
         How It Works
       </h2>
 
@@ -36,11 +50,11 @@ export default function HowItWorks() {
         {steps.map((step, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row items-center mb-24 gap-10 ${
+            className={`flex flex-col md:flex-row items-center mb-16 md:mb-12 gap-10 ${
               step.reverse ? 'md:flex-row-reverse' : ''
             }`}
           >
-            {/* Image Container with Blue Pulsing Background */}
+            {/* Image Container with Blue Background */}
             <div className="relative w-full md:w-1/3 flex items-center justify-center">
               <div className="absolute w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse z-0" />
               <img
@@ -52,13 +66,20 @@ export default function HowItWorks() {
 
             {/* Text Content */}
             <div className="md:w-1/2 text-center md:text-left">
-              <div className="text-2xl font-bold text-gray-800 mb-4">
+              <div className="text-2xl font-bold text-gray-800 mb-0">
                 {step.title}
               </div>
-              <p className="text-gray-600 text-lg">{step.description}</p>
+              <p className="text-gray-600 text-lg leading-relaxed">{step.description}</p>
             </div>
           </div>
         ))}
+      </div>
+
+      {/* CTA Button */}
+      <div className="mt-5 text-center">
+        <button className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 transition duration-300">
+          Hire a Service
+        </button>
       </div>
     </section>
   );
