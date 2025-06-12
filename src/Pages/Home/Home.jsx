@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from "../../Components/Hero";
 import Cards from '../../Components/Cards'
-// import CoreValues from '../../Components/CoreValues';
+import HowItWorks from '../../Components/HowItWorks';
 import StatsSection from '../../Components/StatsSection';
 import WhyChooseUs from '../../Components/WhyChooseUs';
 import AboutUs from '../../Components/AboutUs';
@@ -17,6 +17,7 @@ const Home = () => {
   <WhyChooseUs />
   <AboutUs />
   <Cards />
+  <HowItWorks />
   <Testimonials />
    {/* <CoreValues /> */}
    <FAQ />

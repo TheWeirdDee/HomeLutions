@@ -84,7 +84,7 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       <ul
-        className={`fixed z-10 top-0 left-0 w-full pt-20 h-screen bg-blue-950 text-white font-bold text-center text-lg   transition-transform duration-500 ${
+        className={`fixed z-10 top-0 left-0 w-full pt-20 h-screen bg-blue-950/99 text-white font-bold text-center text-lg   transition-transform duration-500 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:hidden`}
       >
@@ -92,7 +92,7 @@ const Navbar = () => {
           <NavLink 
             exact to="/" 
             className={({ isActive }) => 
-              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-blue-700" : ""}`
+              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-white" : ""}`
             }
             onClick={handleNavLinkClick}
           >
@@ -104,7 +104,7 @@ const Navbar = () => {
           <NavLink 
             exact to="/about" 
             className={({ isActive }) => 
-              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-blue-500" : ""}`
+              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-white" : ""}`
             }
             onClick={handleNavLinkClick}
           >
@@ -115,7 +115,7 @@ const Navbar = () => {
           <NavLink 
             exact to="/howitworks" 
             className={({ isActive }) => 
-              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-blue-500" : ""}`
+              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-white" : ""}`
             }
             onClick={handleNavLinkClick}
           >
@@ -126,7 +126,7 @@ const Navbar = () => {
           <NavLink 
             exact to="/services" 
             className={({ isActive }) => 
-              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-blue-500" : ""}`
+              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-white" : ""}`
             }
             onClick={handleNavLinkClick}
           >
@@ -137,7 +137,7 @@ const Navbar = () => {
           <NavLink 
             exact to="/contact" 
             className={({ isActive }) => 
-              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-blue-500" : ""}`
+              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-white" : ""}`
             }
             onClick={handleNavLinkClick}
           >
