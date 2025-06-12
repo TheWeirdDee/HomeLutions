@@ -4,7 +4,7 @@ const pricing = [
   {
     title: 'Electrical Repairs',
     price: '$50 - $450 +',
-    description: 'From fixing broken sockets and switches to rewiring faulty connections and lighting fixtures. Price varies by urgency and complexity. From fixing broken sockets and switches to rewiring faulty connections and lighting fixtures. Price varies by urgency and complexity.',
+    description: 'From fixing broken sockets and switches to rewiring faulty connections and lighting fixtures. Price varies by urgency and complexity. From fixing broken sockets and switches. Price varies by urgency and complexity.',
   },
   {
     title: 'Plumbing Fixes',

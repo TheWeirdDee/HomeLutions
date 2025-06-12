@@ -78,7 +78,7 @@ const Navbar = () => {
 
 
       {/* Mobile Menu Button */}
-      <button className="md:hidden z-20 right-8  text-gray-900 relative text-2xl" onClick={() => setIsOpen(!isOpen)}>
+      <button className="md:hidden z-20 right-3  text-gray-900 relative text-2xl" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
       </div>
