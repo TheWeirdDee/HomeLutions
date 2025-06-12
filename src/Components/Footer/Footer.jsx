@@ -5,15 +5,13 @@ const Footer = () => {
   return (
     <footer className="bg-blue-950/95 text-white px-6 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
-        {/* Left Section */}
+         
         <div>
           <div className="flex items-center space-x-2 mb-4">
-            <FaToolbox className="text-blue-400 text-3xl" />  
+            <FaToolbox className="text-blue-950 text-3xl" />  
             <span className="text-xl font-bold playfair">HomeLutions</span>
           </div>
-          <p className="text-lg mb-6 playfair">
-            Reliable handyman services for all your home repair and maintenance needs.
-          </p>
+          
           <h3 className="text-2xl font-bold mb-2 text-blue-400 font">Follow Us</h3>
           <div className="flex space-x-4 text-lg">
             <a href="#"><FaFacebookF className="hover:text-blue-400" /></a>

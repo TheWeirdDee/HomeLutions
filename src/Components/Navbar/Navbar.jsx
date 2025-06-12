@@ -73,12 +73,12 @@ const Navbar = () => {
 
       <div className="flex justify-between items-center space-x-2 mr-4 md:mr-5">
         <button className="chloe text-xl px-4 py-2 border border-gray-900 text-white rounded-md font-medium hover:text-black hover:bg-blue-200 transition">Log In</button>
-        <button className="chloe text-xl px-4 py-2 bg-gray-800 text-white hover:bg-gray-900 rounded-md font-medium   transition">Sign Up</button>
+        <button className="chloe text-xl px-4 py-2 text-white bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 rounded-md font-medium   transition">Sign Up</button>
       </div>
 
 
       {/* Mobile Menu Button */}
-      <button className="md:hidden z-20 right-5  text-gray-900 relative text-2xl" onClick={() => setIsOpen(!isOpen)}>
+      <button className="md:hidden z-20 right-8  text-gray-900 relative text-2xl" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
       </div>
@@ -114,17 +114,6 @@ const Navbar = () => {
         </li>
         <li className="py-3">
           <NavLink 
-            exact to="/howitworks" 
-            className={({ isActive }) => 
-              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-white" : ""}`
-            }
-            onClick={handleNavLinkClick}
-          >
-            How it works
-          </NavLink>
-        </li>
-        <li className="py-3">
-          <NavLink 
             exact to="/services" 
             className={({ isActive }) => 
               `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-white" : ""}`
@@ -134,6 +123,18 @@ const Navbar = () => {
             Services
           </NavLink>
         </li>
+        <li className="py-3">
+          <NavLink 
+            exact to="/howitworks" 
+            className={({ isActive }) => 
+              `navLink hover:text-blue-500 ${isActive ? "border-b-2 border-white" : ""}`
+            }
+            onClick={handleNavLinkClick}
+          >
+            How it works
+          </NavLink>
+        </li>
+        
         <li className="py-3">
           <NavLink 
             exact to="/contact" 

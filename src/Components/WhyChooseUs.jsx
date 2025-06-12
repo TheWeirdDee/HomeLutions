@@ -30,8 +30,8 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         {/* Left content */}
         <div>
-          <p className="text-2xl font-semibold text-blue-800 uppercase font">Why Choose Us?</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 playfair">
+          <p className="text-3xl font-semibold text-blue-800 uppercase font">Why Choose Us?</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 playfair">
             Choose Us For Reliable Handyman Services
           </h2>
           <p className="text-gray-600 text-lg mt-4 playfair">

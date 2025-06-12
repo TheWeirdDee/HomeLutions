@@ -8,13 +8,13 @@ const Hero = () => {
     <section className="bg-blue-950 text-white py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
      
       <div className="md:w-1/2 mb-10 md:mb-0">
-      <p className="uppercase text-sm font-medium text-gray-500 mt-20 playfair">
+      <p className="uppercase text-sm font-medium text-gray-500 mt-13 playfair">
           Book A Handyman!
         </p>
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 playfair">
           Reliable Hanyman Services <br /> Right When You Need Them
         </h1>
-        <p className="text-gray-300 mb-6 chloe tracking-wider text-lg">
+        <p className="text-gray-300 mb-6 font tracking-wider text-sm">
           From plumbing and electrical repairs to furniture assembly, cleaning & more - Homelutions connects you with trusted professionals for every fix and clean around your home.
         </p>
         <div className="flex gap-4">

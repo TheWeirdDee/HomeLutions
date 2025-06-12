@@ -5,10 +5,10 @@ const WhyHireUs = () => {
   return (
     <section className="py-20 bg-blue-100 px-6 md:px-20">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Left Content */}
+       
         <div>
-          <h2 className="text-blue-800 text-2xl uppercase font-semibold mb-2 font">About Us</h2>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight playfair">
+          <h2 className="text-blue-800 text-3xl uppercase font-semibold mb-2 font">About Us</h2>
+          <h2 className="text-2xl md:text-2xl font-bold text-gray-900 leading-tight playfair">
           Driven by purpose. Built on trust. <br />
             <span className="text-black"> Focused on excellence. </span>
           </h2>

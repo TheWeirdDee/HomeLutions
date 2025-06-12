@@ -18,20 +18,20 @@ const StatsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className="relative w-full overflow-hidden">
           <div className="flex animate-slide whitespace-nowrap">
-            {/* Duplicate stats for looping effect */}
+            
             {[...stats, ...stats].map((stat, index) => (
               <div
                 key={index}
                 className="min-w-[150px] sm:min-w-[180px] md:min-w-[220px] text-center flex-shrink-0 mx-4"
               >
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 font">
                   {inView ? (
                     <CountUp end={stat.value} duration={2} suffix={stat.suffix} />
                   ) : (
                     <>0{stat.suffix}</>
                   )}
                 </h2>
-                <p className="text-sm text-gray-800 mt-1">{stat.label}</p>
+                <p className="text-sm text-gray-800 mt-1 playfair">{stat.label}</p>
               </div>
             ))}
           </div>

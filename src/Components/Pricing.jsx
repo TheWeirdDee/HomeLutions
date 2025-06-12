@@ -73,7 +73,7 @@ const PricingGuide = () => {
           {pricing.map((item, index) => (
             <div
               key={index}
-              className="bg-white h-[240px] shadow-[0_10px_25px_rgba(0,0,0,0.5)] rounded-xl p-6 text-left transition-all duration-300 hover:shadow-xl hover:breathe"
+              className="bg-white h-[280px] shadow-[0_10px_25px_rgba(0,0,0,0.5)] rounded-xl p-6 text-left transition-all duration-300 hover:shadow-xl hover:breathe"
             >
               <h3 className="text-xl font-semibold mb-4 text-gray-800 font">
                 {item.title}
