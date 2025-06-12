@@ -40,15 +40,6 @@ const Navbar = () => {
           >
             About Us
           </NavLink></li>
-
-        <li> <NavLink 
-            exact to="/howitworks" 
-            className={({ isActive }) => 
-              `navLink hover:text-blue-400 ${isActive ? "border-b-2 border-blue-100" : ""}`
-            }
-          >
-             How it works
-          </NavLink></li>
           <li>
             <NavLink 
             exact to="/Services" 
@@ -58,6 +49,16 @@ const Navbar = () => {
           >
             Services
           </NavLink></li>
+
+        <li> <NavLink 
+            exact to="/howitworks" 
+            className={({ isActive }) => 
+              `navLink hover:text-blue-400 ${isActive ? "border-b-2 border-blue-100" : ""}`
+            }
+          >
+             How it works
+          </NavLink></li>
+           
 
         <li>
             <NavLink 
