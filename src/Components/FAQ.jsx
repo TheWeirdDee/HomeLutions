@@ -18,6 +18,14 @@ const faqs = [
     question: "Are your workers certified?",
     answer: "All our handymen are trained professionals and fully insured for your peace of mind.",
   },
+  {
+    question: "Do I need to provide tools?",
+    answer: "No, our professionals come fully equiped.",
+  },
+  {
+    question: "Can I reschedule my booking?",
+    answer: "Yes, up to 24 hours before your appointment",
+  },
 ];
 
 const FAQ = () => {

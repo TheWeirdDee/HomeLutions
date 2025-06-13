@@ -19,7 +19,7 @@ const HowItWorksHero = () => {
         </p>
         <div className="flex gap-4">
           <button className="bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 text-white py-2 px-5 rounded font-semibold Bona">
-            Need A Service
+            Book A Service
           </button>
           <button className="border border-white font-semibold hover:bg-blue-200 hover:text-black py-2 px-5 rounded playfair">
             Discover More

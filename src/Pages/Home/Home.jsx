@@ -6,7 +6,7 @@ import StatsSection from '../../Components/StatsSection';
 import WhyChooseUs from '../../Components/WhyChooseUs';
 import AboutUs from '../../Components/AboutUs';
 import Testimonials from '../../Components/Testimonials';
-import ContactSection from '../../Components/ContactSection';
+import ContactSection from '../../Components/ContactPage';
 import FAQ from '../../Components/FAQ';
 import Pricing from '../../Components/Pricing';
 const Home = () => {
