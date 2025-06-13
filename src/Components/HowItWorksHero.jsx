@@ -15,7 +15,7 @@ const HowItWorksHero = () => {
            HOW IT WORKS
         </h1>
         <p className="text-gray-300 mb-6 playfair tracking-wider text-lg">
-        Homelutions was born out of a simple need, making home repairs easy, reliable, and stress-free. We connect busy homeowners with skilled professionals who take pride in quality work and exceptional service.
+        Find Your <span className='text-blue-300'>Service,</span>  Book an Appointment, Track Your Job in Real-Time, Rate and Review Your Experience, <br /> Get Ongoing Support.
         </p>
         <div className="flex gap-4">
           <button className="bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 text-white py-2 px-5 rounded font-semibold Bona">

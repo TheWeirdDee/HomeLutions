@@ -15,7 +15,7 @@ const AboutHero = () => {
           WHAT WE OFFER
         </h1>
         <p className="text-gray-300 mb-6 playfair tracking-wider text-lg">
-        Homelutions was born out of a simple need, making home repairs easy, reliable, and stress-free. We connect busy homeowners with skilled professionals who take pride in quality work and exceptional service.
+        From fixing leaky faucets to full  <span className='text-blue-300'>home repairs</span>, our skilled team ensures reliable, efficient, and affordable service for all your handyman needs.
         </p>
         <div className="flex gap-4">
           <button className="bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 text-white py-2 px-5 rounded font-semibold Bona">

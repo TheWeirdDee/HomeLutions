@@ -42,8 +42,8 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section className="relative py-20 px-6 md:px-20 bg-blue-100 overflow-hidden">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-        How It Works
+      <h2 className="text-4xl md:text-5xl font-semibold text-center tracking-widest  mb-16 chloe">
+        How It Works?
       </h2>
 
       <div className="relative before:absolute before:left-[50%] before:top-10 before:bottom-10 before:w-1 before:bg-gradient-to-b from-[#f0f0f0] to-[#d1d1d1] before:rounded-full before:translate-x-[-50%]">
@@ -64,12 +64,12 @@ export default function HowItWorks() {
               />
             </div>
 
-            {/* Text Content */}
+            
             <div className="md:w-1/2 text-center md:text-left">
-              <div className="text-2xl font-bold text-gray-800 mb-0">
+              <div className="text-2xl font-bold text-gray-800 mb-3 font">
                 {step.title}
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed">{step.description}</p>
+              <p className="text-gray-700 text-left md:text-left text-lg leading-relaxed playfair">{step.description}</p>
             </div>
           </div>
         ))}
@@ -77,7 +77,7 @@ export default function HowItWorks() {
 
       {/* CTA Button */}
       <div className="mt-5 text-center">
-        <button className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 transition duration-300">
+        <button className="px-8 py-3 text-white font-semibold rounded-md shadow-md bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 transition duration-300">
           Hire a Service
         </button>
       </div>

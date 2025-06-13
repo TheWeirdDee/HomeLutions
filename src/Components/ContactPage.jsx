@@ -5,9 +5,9 @@ export default function BookService() {
   return (
     <section className="bg-blue-100 py-20 px-6 md:px-20">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
+         
         <div className="mb-10">
-          <h2 className="font text-3xl md:text-4xl font-bold text-gray-800 mb-4 mt-8 text-left">
+          <h2 className="font text-4xl md:text-5xl font-bold text-gray-800 mb-4 mt-8 text-left">
             Book a Service
           </h2>
           <p className="text-gray-600 playfair text-lg text-left max-w-2xl">
@@ -95,11 +95,11 @@ export default function BookService() {
               <textarea
                 rows="6"
                 placeholder="Please provide details about the work you need done..."
-                className="md:w-150 w-80 sm:w-130 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="md:w-150 w-70 sm:w-130 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
 
-            {/* Image */}
+            
             <div className="md:w-1/4 mr-20">
               <img
                 src={contact}
