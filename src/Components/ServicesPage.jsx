@@ -1,6 +1,6 @@
 // src/components/HeroSection.jsx
 import React from 'react';
-import HeroImage from '../assets/heroimg.png';  
+import HeroImage from '../assets/AboutHero.png';  
  
 
 const AboutHero = () => {

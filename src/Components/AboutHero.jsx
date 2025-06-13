@@ -1,6 +1,6 @@
 // src/components/HeroSection.jsx
 import React from 'react';
-import HeroImage from '../assets/heroimg.png';  
+import HeroImage from '../assets/AboutHeroo.png';  
  
 
 const AboutHero = () => {
@@ -27,7 +27,7 @@ const AboutHero = () => {
         </div>
       </div>
 
-      {/* Right Image */}
+       
       <div className="md:w-1/2 flex justify-center">
         <img
           src={HeroImage}
