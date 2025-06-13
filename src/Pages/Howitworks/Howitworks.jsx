@@ -4,7 +4,7 @@ import StatsSection from '../../Components/StatsSection';
 import HowItWorksPage from '../../Components/HowItWorksPage';
 import Pricing from '../../Components/Pricing';
 import Testimonials from '../../Components/Testimonials';
-import ContactSection from '../../Components/ContactSection';
+import ContactSection from '../../Components/ContactPage';
 import FAQ from '../../Components/FAQ';
 const Howitworks = () => {
   return (

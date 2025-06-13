@@ -95,7 +95,7 @@ export default function BookService() {
               <textarea
                 rows="6"
                 placeholder="Please provide details about the work you need done..."
-                className="md:w-150 w-90 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="md:w-150 w-80 sm:w-130 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
 

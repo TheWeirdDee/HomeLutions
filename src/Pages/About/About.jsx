@@ -6,7 +6,7 @@ import Cards from "../../Components/Cards";
 import StatsSection from "../../Components/StatsSection";
 import HowItWorks from "../../Components/HowItWorks";
 import Testimonials from '../../Components/Testimonials';
-import ContactSection from '../../Components/ContactSection';
+import ContactSection from '../../Components/ContactPage';
 import FAQ from '../../Components/FAQ';
 import Pricing from '../../Components/Pricing';
 
