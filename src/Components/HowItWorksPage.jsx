@@ -58,8 +58,8 @@ export default function HowItWorks() {
             }`}
           >
              
-            <div className="relative w-full md:w-1/4 flex items-center justify-center">
-              <div className="absolute w-64 h-74 bg-blue-600 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse z-0" />
+            <div className="relative md:w-1/5 w-1/3 flex items-center justify-center">
+              <div className="absolute w-34 h-34 bg-blue-800 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse z-0" />
               <img
                 src={step.image}
                 alt={step.title}
