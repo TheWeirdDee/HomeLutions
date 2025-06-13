@@ -67,7 +67,7 @@ const Navbar = () => {
               `navLink hover:text-blue-400 ${isActive ? "border-b-2 border-blue-100" : ""}`
             }
           >
-            Contact Us
+        Get In Touch
           </NavLink></li>
       </ul>
 
@@ -143,7 +143,7 @@ const Navbar = () => {
             }
             onClick={handleNavLinkClick}
           >
-            Contact Us
+           Get In Touch
           </NavLink>
         </li>
       </ul> 

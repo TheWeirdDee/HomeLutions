@@ -11,10 +11,10 @@ const AboutHero = () => {
       <p className="uppercase text-sm font-medium text-gray-500 mt-13 playfair">
           Book A Handyman!
         </p>
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 playfair">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mt-4 font">
           WHO WE ARE?
         </h1>
-        <p className="text-gray-300 mb-6 chloe tracking-wider text-lg">
+        <p className="text-gray-300 mb-6 playfair tracking-wider text-lg">
         Homelutions was born out of a simple need, making home repairs easy, reliable, and stress-free. We connect busy homeowners with skilled professionals who take pride in quality work and exceptional service.
         </p>
         <div className="flex gap-4">

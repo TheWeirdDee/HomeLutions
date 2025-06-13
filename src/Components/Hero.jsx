@@ -14,7 +14,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 playfair">
           Reliable Hanyman Services <br /> Right When You Need Them
         </h1>
-        <p className="text-gray-300 mb-6 font tracking-wider text-sm">
+        <p className="text-gray-300 mb-6 playfair tracking-wider text-md">
           From plumbing and electrical repairs to furniture assembly, cleaning & more - Homelutions connects you with trusted professionals for every fix and clean around your home.
         </p>
         <div className="flex gap-4">
