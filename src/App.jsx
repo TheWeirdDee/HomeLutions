@@ -8,10 +8,12 @@ import Howitworks from './Pages/Howitworks/Howitworks'
 import Services from './Pages/OurServices/Services'
 import Contact from './Pages/Contact/Contact'
 import Error from './Pages/Error/Error'
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
