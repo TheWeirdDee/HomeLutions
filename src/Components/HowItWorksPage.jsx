@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import electric from '../assets/Support.png';
 import Search from '../assets/Searchimg.png';
 import Appointment from '../assets/Appointment.png';
 import Track from '../assets/Trackk.png';
 import Rate from '../assets/Rate.png';
+
 const steps = [
   {
     title: 'Find Your Service',
@@ -43,9 +47,16 @@ const steps = [
 ];
 
 export default function HowItWorks() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
     <section className="relative py-20 px-6 md:px-20 bg-blue-100 overflow-hidden">
-      <h2 className="text-4xl md:text-5xl font-semibold text-center tracking-widest  mb-16 chloe">
+      <h2
+        className="text-4xl md:text-5xl font-semibold text-center tracking-widest mb-16 chloe"
+        data-aos="fade-down"
+      >
         How It Works?
       </h2>
 
@@ -56,8 +67,10 @@ export default function HowItWorks() {
             className={`flex flex-col md:flex-row items-center mb-16 md:mb-12 gap-10 ${
               step.reverse ? 'md:flex-row-reverse' : ''
             }`}
+            data-aos={step.reverse ? 'fade-left' : 'fade-right'}
+            data-aos-delay={index * 100}
           >
-             
+            {/* Image */}
             <div className="relative md:w-1/5 w-1/3 flex items-center justify-center">
               <div className="absolute w-34 h-34 bg-blue-800 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse z-0" />
               <img
@@ -67,19 +80,21 @@ export default function HowItWorks() {
               />
             </div>
 
-            
+            {/* Text */}
             <div className="md:w-1/2 text-center md:text-left">
               <div className="text-2xl font-bold text-gray-800 mb-3 font">
                 {step.title}
               </div>
-              <p className="text-gray-700 text-left md:text-left text-lg leading-relaxed playfair">{step.description}</p>
+              <p className="text-gray-700 text-left md:text-left text-lg leading-relaxed playfair">
+                {step.description}
+              </p>
             </div>
           </div>
         ))}
       </div>
 
       {/* CTA Button */}
-      <div className="mt-5 text-center">
+      <div className="mt-5 text-center" data-aos="zoom-in-up">
         <button className="font tracking-wider px-8 py-3 text-white font-semibold rounded-md shadow-md bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 transition duration-300">
           Hire a Service
         </button>

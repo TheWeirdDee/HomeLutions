@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const pricing = [
   {
@@ -44,9 +46,12 @@ const pricing = [
 ];
 
 const PricingGuide = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
     <section className="py-20 bg-blue-50">
-       
       <style>{`
         @keyframes breathe {
           0%, 100% {
@@ -62,10 +67,17 @@ const PricingGuide = () => {
       `}</style>
 
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-5 text-blue-950 font">
+        <h2
+          className="text-4xl font-bold text-center mb-5 text-blue-950 font"
+          data-aos="fade-up"
+        >
           Pricing Guide
         </h2>
-        <p className="text-center text-gray-600 mb-16 max-w-3xl mx-auto text-lg playfair">
+        <p
+          className="text-center text-gray-600 mb-16 max-w-3xl mx-auto text-lg playfair"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
           Our service-based pricing ensures you pay only after completion. Fees vary depending on the location, urgency, and task complexity. Here’s a general pricing overview:
         </p>
 
@@ -74,6 +86,8 @@ const PricingGuide = () => {
             <div
               key={index}
               className="bg-white h-[280px] shadow-[0_10px_25px_rgba(0,0,0,0.5)] rounded-xl p-6 text-left transition-all duration-300 hover:shadow-xl hover:breathe"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               <h3 className="text-xl font-semibold mb-4 text-gray-800 font">
                 {item.title}

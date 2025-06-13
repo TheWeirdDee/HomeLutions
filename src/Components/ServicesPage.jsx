@@ -3,7 +3,7 @@ import React from 'react';
 import HeroImage from '../assets/AboutHero.png';  
  
 
-const AboutHero = () => {
+const ServicesPage = () => {
   return (
     <section className="bg-blue-950 text-white py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
      
@@ -27,11 +27,11 @@ const AboutHero = () => {
         </div>
       </div>
 
-      {/* Right Image */}
+       
       <div className="md:w-1/2 flex justify-center">
         <img
           src={HeroImage}
-          alt="Cleaning Lady"
+          alt="HandyMan"
           className="w-full max-w-md"
         />
       </div>
@@ -39,4 +39,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default ServicesPage;
