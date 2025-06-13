@@ -1,33 +1,36 @@
 import React from 'react';
-import electric from '../assets/electric.png';
-
+import electric from '../assets/Support.png';
+import Search from '../assets/Searchimg.png';
+import Appointment from '../assets/Appointment.png';
+import Track from '../assets/Trackk.png';
+import Rate from '../assets/Rate.png';
 const steps = [
   {
     title: 'Find Your Service',
     description:
       'Browse our catalog of handyman services to find exactly what you need. Whether it’s fixing an electrical issue, hanging a TV, or deep cleaning your space, we’ve got you covered with a wide array of reliable solutions at your fingertips.',
-    image: electric,
+    image: Search,
     reverse: false,
   },
   {
     title: 'Book an Appointment',
     description:
       'Choose a convenient time that fits your schedule. Our platform lets you easily pick a day and time slot. Once confirmed, a qualified handyman will be assigned and briefed to ensure smooth and timely service delivery.',
-    image: electric,
+    image: Appointment,
     reverse: true,
   },
   {
     title: 'Track Your Job in Real-Time',
     description:
       'From the moment your appointment is confirmed, you can track the handyman’s progress in real-time. Get notifications when they’re on the way, when the work begins, and when it’s completed — so you’re never left guessing.',
-    image: electric,
+    image: Track,
     reverse: false,
   },
   {
     title: 'Rate and Review Your Experience',
     description:
       'After the job is complete, we ask for your feedback. Your rating helps maintain our high standards and ensures that only the best professionals stay in our network. It’s a quick way to share your satisfaction or raise concerns.',
-    image: electric,
+    image: Rate,
     reverse: true,
   },
   {
@@ -55,8 +58,8 @@ export default function HowItWorks() {
             }`}
           >
              
-            <div className="relative w-full md:w-1/3 flex items-center justify-center">
-              <div className="absolute w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse z-0" />
+            <div className="relative w-full md:w-1/4 flex items-center justify-center">
+              <div className="absolute w-64 h-74 bg-blue-600 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse z-0" />
               <img
                 src={step.image}
                 alt={step.title}
@@ -77,7 +80,7 @@ export default function HowItWorks() {
 
       {/* CTA Button */}
       <div className="mt-5 text-center">
-        <button className="px-8 py-3 text-white font-semibold rounded-md shadow-md bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 transition duration-300">
+        <button className="font tracking-wider px-8 py-3 text-white font-semibold rounded-md shadow-md bg-gradient-to-r from-gray-900 to-blue-500 hover:from-blue-800 hover:to-blue-900 transition duration-300">
           Hire a Service
         </button>
       </div>
