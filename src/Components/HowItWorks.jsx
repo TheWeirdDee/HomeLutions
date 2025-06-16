@@ -8,7 +8,7 @@ const steps = [
     icon: <FaSearch className="text-white text-2xl" />,
     title: "Find Your Service",
     description:
-      "Browse our list of professional handyman services tailored to your needs.",
+      "Browse our list of professional handyman services that fits your needs.",
     bgColor: "bg-purple-500",
   },
   {
