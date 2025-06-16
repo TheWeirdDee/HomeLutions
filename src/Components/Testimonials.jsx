@@ -3,21 +3,24 @@ import React from "react";
 const testimonials = [
   {
     name: "Mehwish Devin",
-    image:  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR3nFGupGZ6y2O56us0L5VJNJ7eOjZtmzmXw&s.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR3nFGupGZ6y2O56us0L5VJNJ7eOjZtmzmXw&s.jpg",
     text: "Fantastic work! The repairs were quick and clean. Very professional.",
     highlighted: false,
   },
   {
     name: "Elizabeth Jeff",
-    image: "https://t3.ftcdn.net/jpg/05/13/50/12/360_F_513501298_MSHd0MeF7V8bipNupeiKGzz1r7PB8AYf.jpg",
+    image:
+      "https://t3.ftcdn.net/jpg/05/13/50/12/360_F_513501298_MSHd0MeF7V8bipNupeiKGzz1r7PB8AYf.jpg",
     text: "Door repair was spot on. Polite, on time, and fixed everything perfectly.",
     highlighted: true,
   },
   {
     name: "Danny Thomas",
-    image: "https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg",
+    image:
+      "https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg",
     text: "They mounted my TV and fixed a leak in the same visit. Super efficient!",
-    highlighted: false
+    highlighted: false,
   },
 ];
 
@@ -27,12 +30,13 @@ const Testimonials = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
         {/* Left Section */}
         <div className="md:w-1/2">
-           
           <div className="flex items-center space-x-1 mb-4">
             {Array(5)
               .fill(0)
               .map((_, idx) => (
-                <span key={idx} className="text-yellow-400 text-xl">⭐</span>
+                <span key={idx} className="text-yellow-400 text-xl">
+                  ⭐
+                </span>
               ))}
           </div>
 
@@ -49,7 +53,6 @@ const Testimonials = () => {
           </button>
         </div>
 
-        {/* Right Section */}
         <div className="md:w-1/2 space-y-4 playfair text-md">
           {testimonials.map((t, i) => (
             <div
@@ -71,7 +74,7 @@ const Testimonials = () => {
               </div>
               <div className="ml-auto">
                 <span className="text-blue-400 text-2xl font-bold leading-none">
-                  {t.highlighted ? '“”' : '”'}
+                  {t.highlighted ? "“”" : "”"}
                 </span>
               </div>
             </div>

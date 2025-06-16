@@ -1,46 +1,46 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-import electric from '../assets/Support.png';
-import Search from '../assets/Searchimg.png';
-import Appointment from '../assets/Appointment.png';
-import Track from '../assets/Trackk.png';
-import Rate from '../assets/Rate.png';
+import electric from "../assets/Support.png";
+import Search from "../assets/Searchimg.png";
+import Appointment from "../assets/Appointment.png";
+import Track from "../assets/Trackk.png";
+import Rate from "../assets/Rate.png";
 
 const steps = [
   {
-    title: 'Find Your Service',
+    title: "Find Your Service",
     description:
-      'Browse our catalog of handyman services to find exactly what you need. Whether it’s fixing an electrical issue, hanging a TV, or deep cleaning your space, we’ve got you covered with a wide array of reliable solutions at your fingertips.',
+      "Browse our catalog of handyman services to find exactly what you need. Whether it’s fixing an electrical issue, hanging a TV, or deep cleaning your space, we’ve got you covered with a wide array of reliable solutions at your fingertips.",
     image: Search,
     reverse: false,
   },
   {
-    title: 'Book an Appointment',
+    title: "Book an Appointment",
     description:
-      'Choose a convenient time that fits your schedule. Our platform lets you easily pick a day and time slot. Once confirmed, a qualified handyman will be assigned and briefed to ensure smooth and timely service delivery.',
+      "Choose a convenient time that fits your schedule. Our platform lets you easily pick a day and time slot. Once confirmed, a qualified handyman will be assigned and briefed to ensure smooth and timely service delivery.",
     image: Appointment,
     reverse: true,
   },
   {
-    title: 'Track Your Job in Real-Time',
+    title: "Track Your Job in Real-Time",
     description:
-      'From the moment your appointment is confirmed, you can track the handyman’s progress in real-time. Get notifications when they’re on the way, when the work begins, and when it’s completed — so you’re never left guessing.',
+      "From the moment your appointment is confirmed, you can track the handyman’s progress in real-time. Get notifications when they’re on the way, when the work begins, and when it’s completed — so you’re never left guessing.",
     image: Track,
     reverse: false,
   },
   {
-    title: 'Rate and Review Your Experience',
+    title: "Rate and Review Your Experience",
     description:
-      'After the job is complete, we ask for your feedback. Your rating helps maintain our high standards and ensures that only the best professionals stay in our network. It’s a quick way to share your satisfaction or raise concerns.',
+      "After the job is complete, we ask for your feedback. Your rating helps maintain our high standards and ensures that only the best professionals stay in our network. It’s a quick way to share your satisfaction or raise concerns.",
     image: Rate,
     reverse: true,
   },
   {
-    title: 'Get Ongoing Support',
+    title: "Get Ongoing Support",
     description:
-      'Need another service later? No problem. With your profile, booking history, and preferences saved, hiring again is fast and hassle-free. Plus, our support team is always available to answer questions or handle follow-ups.',
+      "Need another service later? No problem. With your profile, booking history, and preferences saved, hiring again is fast and hassle-free. Plus, our support team is always available to answer questions or handle follow-ups.",
     image: electric,
     reverse: false,
   },
@@ -65,9 +65,9 @@ export default function HowItWorks() {
           <div
             key={index}
             className={`flex flex-col md:flex-row items-center mb-16 md:mb-12 gap-10 ${
-              step.reverse ? 'md:flex-row-reverse' : ''
+              step.reverse ? "md:flex-row-reverse" : ""
             }`}
-            data-aos={step.reverse ? 'fade-left' : 'fade-right'}
+            data-aos={step.reverse ? "fade-left" : "fade-right"}
             data-aos-delay={index * 100}
           >
             {/* Image */}

@@ -1,23 +1,38 @@
-import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaToolbox } from 'react-icons/fa';  
+import React from "react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaToolbox,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-blue-950/95 text-white px-6 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
-         
         <div>
           <div className="flex items-center space-x-2 mb-4">
-            <FaToolbox className="text-blue-950 text-3xl" />  
+            <FaToolbox className="text-blue-950 text-3xl" />
             <span className="text-xl font-bold playfair">HomeLutions</span>
           </div>
-          
-          <h3 className="text-2xl font-bold mb-2 text-blue-400 font">Follow Us</h3>
+
+          <h3 className="text-2xl font-bold mb-2 text-blue-400 font">
+            Follow Us
+          </h3>
           <div className="flex space-x-4 text-lg">
-            <a href="#"><FaFacebookF className="hover:text-blue-400" /></a>
-            <a href="#"><FaInstagram className="hover:text-blue-400" /></a>
-            <a href="#"><FaTwitter className="hover:text-blue-400" /></a>
-            <a href="#"><FaLinkedin className="hover:text-blue-400" /></a>
+            <a href="#">
+              <FaFacebookF className="hover:text-blue-400" />
+            </a>
+            <a href="#">
+              <FaInstagram className="hover:text-blue-400" />
+            </a>
+            <a href="#">
+              <FaTwitter className="hover:text-blue-400" />
+            </a>
+            <a href="#">
+              <FaLinkedin className="hover:text-blue-400" />
+            </a>
           </div>
         </div>
 
@@ -25,9 +40,21 @@ const Footer = () => {
         <div>
           <h4 className="text-xl font-semibold mb-4 font">Quick Links</h4>
           <ul className="space-y-2 text-lg playfair">
-            <li><a href="#" className="hover:text-blue-400">Home</a></li>
-            <li><a href="#" className="hover:text-blue-400">Services</a></li>
-            <li><a href="#" className="hover:text-blue-400">Why Hire Us?</a></li>
+            <li>
+              <a href="#" className="hover:text-blue-400">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-400">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-400">
+                Why Hire Us?
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -35,9 +62,21 @@ const Footer = () => {
         <div>
           <h4 className="text-xl font-semibold mb-4 font">Company</h4>
           <ul className="space-y-2 text-md playfair">
-            <li><a href="#" className="hover:text-blue-400">About Us</a></li>
-            <li><a href="#" className="hover:text-blue-400">FAQ</a></li>
-            <li><a href="#" className="hover:text-blue-400">Privacy Policy</a></li>
+            <li>
+              <a href="#" className="hover:text-blue-400">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-400">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-400">
+                Privacy Policy
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -45,9 +84,21 @@ const Footer = () => {
         <div>
           <h4 className="text-xl font-semibold mb-4 font">Support</h4>
           <ul className="space-y-2 text-md playfair">
-            <li><a href="#" className="hover:text-blue-400">Customer Support</a></li>
-            <li><a href="#" className="hover:text-blue-400">Contact Us</a></li>
-            <li><a href="#" className="hover:text-blue-400">Live Chat</a></li>
+            <li>
+              <a href="#" className="hover:text-blue-400">
+                Customer Support
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-400">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-400">
+                Live Chat
+              </a>
+            </li>
           </ul>
         </div>
       </div>

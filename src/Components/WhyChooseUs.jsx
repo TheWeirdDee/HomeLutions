@@ -41,12 +41,15 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         {/* Left Content */}
         <div data-aos="fade-right">
-          <p className="text-3xl font-semibold text-blue-800 uppercase font">Why Choose Us?</p>
+          <p className="text-3xl font-semibold text-blue-800 uppercase font">
+            Why Choose Us?
+          </p>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 playfair">
             Choose Us For Reliable Handyman Services
           </h2>
           <p className="text-gray-600 text-lg mt-4 playfair">
-            From minor fixes to major repairs, our team ensures your home and workspace stay in top shape quickly, professionally, and affordably.
+            From minor fixes to major repairs, our team ensures your home and
+            workspace stay in top shape quickly, professionally, and affordably.
           </p>
         </div>
 
@@ -59,12 +62,14 @@ const WhyChooseUs = () => {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <div className="bg-blue-100 p-2 rounded-md">
-                {item.icon}
-              </div>
+              <div className="bg-blue-100 p-2 rounded-md">{item.icon}</div>
               <div>
-                <h3 className="font-semibold text-gray-900 text-lg">{item.title}</h3>
-                <p className="text-md text-gray-600 mt-1 playfair">{item.description}</p>
+                <h3 className="font-semibold text-gray-900 text-lg">
+                  {item.title}
+                </h3>
+                <p className="text-md text-gray-600 mt-1 playfair">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}

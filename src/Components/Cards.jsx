@@ -47,7 +47,7 @@ const services = [
       "Need a pro to install your washing machine, fan, or cooker? We hook it up neatly, safely, and ready to roll.",
     image: Appliance,
   },
-   
+
   {
     title: "TV Mounting & Wall Hanging",
     description:
@@ -60,9 +60,7 @@ const services = [
       "Hosting a party? Just had one? Or just too busy to deep clean? We’ll scrub, shine, and refresh every corner.",
     image: Cleaning,
   },
-  
 ];
-
 
 const Cards = () => {
   const [activeIndex, setActiveIndex] = useState(services.length - 1);
@@ -81,7 +79,10 @@ const Cards = () => {
         We’ve Got You Covered!
       </h2>
 
-      <div className="relative max-w-4xl mx-auto z-0" style={{ height: "400px" }}>
+      <div
+        className="relative max-w-4xl mx-auto z-0"
+        style={{ height: "400px" }}
+      >
         {services.map((service, index) => {
           const isActive = index === activeIndex;
           const stackOffset = (services.length - 1 - index) * 30;
@@ -104,14 +105,15 @@ const Cards = () => {
                   <h4 className="text-2xl font-semibold text-gray-800 mb-3 font">
                     {service.title}
                   </h4>
-                  <p className="text-gray-600 text-lg playfair">{service.description}</p>
+                  <p className="text-gray-600 text-lg playfair">
+                    {service.description}
+                  </p>
                 </div>
                 <img
-  src={service.image}
-  alt={service.title}
-  className="w-full h-60 sm:h-80 md:h-80 lg:h-full object-contain"
-/>
-
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-60 sm:h-80 md:h-80 lg:h-full object-contain"
+                />
               </div>
             </motion.div>
           );

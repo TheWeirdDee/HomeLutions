@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";  
+import "../index.css";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
@@ -18,7 +18,6 @@ const StatsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className="relative w-full overflow-hidden">
           <div className="flex animate-slide whitespace-nowrap">
-            
             {[...stats, ...stats].map((stat, index) => (
               <div
                 key={index}
@@ -26,12 +25,18 @@ const StatsSection = () => {
               >
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 font">
                   {inView ? (
-                    <CountUp end={stat.value} duration={2} suffix={stat.suffix} />
+                    <CountUp
+                      end={stat.value}
+                      duration={2}
+                      suffix={stat.suffix}
+                    />
                   ) : (
                     <>0{stat.suffix}</>
                   )}
                 </h2>
-                <p className="text-sm text-gray-800 mt-1 playfair">{stat.label}</p>
+                <p className="text-sm text-gray-800 mt-1 playfair">
+                  {stat.label}
+                </p>
               </div>
             ))}
           </div>

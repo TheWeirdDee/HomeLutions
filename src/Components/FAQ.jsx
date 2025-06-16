@@ -1,22 +1,26 @@
-import React, { useState } from 'react';
-import { FaPlus, FaMinus } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 const faqs = [
   {
     question: "What handyman services do you offer?",
-    answer: "We cover plumbing, electrical work, furniture assembly, painting, minor renovations, and general maintenance.",
+    answer:
+      "We cover plumbing, electrical work, furniture assembly, painting, minor renovations, and general maintenance.",
   },
   {
     question: "How quickly can you arrive?",
-    answer: "We offer same-day and next-day services depending on availability and location.",
+    answer:
+      "We offer same-day and next-day services depending on availability and location.",
   },
   {
     question: "Is there a minimum charge?",
-    answer: "Yes, we have a one-hour minimum service charge. Pricing varies based on task complexity.",
+    answer:
+      "Yes, we have a one-hour minimum service charge. Pricing varies based on task complexity.",
   },
   {
     question: "Are your workers certified?",
-    answer: "All our handymen are trained professionals and fully insured for your peace of mind.",
+    answer:
+      "All our handymen are trained professionals and fully insured for your peace of mind.",
   },
   {
     question: "Do I need to provide tools?",
@@ -30,7 +34,7 @@ const faqs = [
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [questionInput, setQuestionInput] = useState('');
+  const [questionInput, setQuestionInput] = useState("");
 
   const toggleFAQ = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
@@ -39,7 +43,7 @@ const FAQ = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Your question was submitted: "${questionInput}"`);
-    setQuestionInput('');
+    setQuestionInput("");
   };
 
   return (
@@ -47,12 +51,17 @@ const FAQ = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* Left Section */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 font">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 font">
+            Frequently Asked Questions
+          </h2>
           <p className="text-gray-600 mb-6 playfair text-lg">
-            Answers to some common questions about our handyman services. We’re here to help you feel confident.
+            Answers to some common questions about our handyman services. We’re
+            here to help you feel confident.
           </p>
 
-          <p className="text-md font-medium text-gray-700 mb-2">Can’t locate the answers you need?</p>
+          <p className="text-md font-medium text-gray-700 mb-2">
+            Can’t locate the answers you need?
+          </p>
           <form onSubmit={handleSubmit}>
             <textarea
               className="w-full border border-gray-400 rounded-md p-3 text-sm resize-none focus:outline-none focus:border-blue-500 mb-4"
@@ -74,12 +83,17 @@ const FAQ = () => {
         {/* Right Section */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow p-6 playfair">
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow p-6 playfair"
+            >
               <div
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
-                <h3 className="text-xl font-semibold text-gray-800">{faq.question}</h3>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {faq.question}
+                </h3>
                 {activeIndex === index ? (
                   <FaMinus className="text-gray-500" />
                 ) : (
