@@ -19,7 +19,7 @@ const Hero = () => {
           Book A Handyman!
         </p>
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 playfair">
-          Reliable Handyman Services <br /> Right When You Need Them
+           Reliable Handyman Services <br /> Right When You Need Them
         </h1>
         <p className="text-gray-300 mb-6 playfair tracking-wider text-md">
           From plumbing and electrical repairs to furniture assembly, cleaning &
