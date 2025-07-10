@@ -31,7 +31,7 @@ const Hero = () => {
             Need A Service
           </button>
           <button className="border border-white font-semibold hover:bg-blue-200 hover:text-black py-2 px-5 rounded playfair">
-            Discover More
+            See What We Offer
           </button>
         </div>
       </div>
